@@ -1,0 +1,69 @@
+<div class="row g-4">
+{{#each cards as |card|}}
+  <div class="col-lg-6 col-xl-4">
+    <!--start card-->
+    <div class="card-wrapper border border-light rounded shadow-sm">
+      <div class="card no-after rounded">
+        {{#if img-path}}
+        <div class="img-responsive-wrapper">
+          <div class="img-responsive img-responsive-panoramic {{imgClass}}">
+            <figure class="img-wrapper">
+              <img class="" src="{{card.img-path}}" title="titolo immagine" alt="descrizione immagine">
+            </figure>
+            {{#if card.tag}}
+            <div class="card-calendar d-flex flex-column justify-content-center">
+              <span class="card-date">{{card.date}}</span>
+              <span class="card-day">{{card.month}}</span>
+            </div>
+            {{/if}}
+          </div>
+        </div>
+        {{/if}}
+        <div class="card-body">
+          <div class="category-top">
+            <a class="category text-decoration-none" href="#">{{card.category}}</a>
+            {{#if card.category-date}}
+            <span class="data">{{card.category-date}}</span>
+            {{/if}}
+          </div>
+          <h3 class="card-title"><a href="{{card.url}}" class="text-decoration-none">{{card.title}}</a></h3>
+          <p class="card-text text-secondary pb-3">{{card.description}}</p>
+
+          <a class="read-more t-primary text-uppercase" href="#" aria-label="Leggi di più sulla pagina di {{card.title}}">
+            <span class="text">{{card.link}}</span>
+            <span class="visually-hidden">su Lorem ipsum dolor sit amet, consectetur adipiscing elit…</span>
+            <svg class="icon icon-inverse icon-xs ml-10">
+              <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#{{card.icon}}"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+{{/each}}
+  <!--end card-->
+
+{{#if button-next}}
+<div class="d-flex justify-content-end">
+  {{#if btn-data-element}}
+  <a href="#" class="btn btn-outline-primary full-mb" data-element={{btn-data-element}}>
+    {{btn-label}} 
+    <svg class="icon icon-primary icon-xs ml-10">
+      <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-arrow-right"></use>
+    </svg>
+  </a>
+  {{!-- {{>cmp-button/cmp-button data-element=btn-data-element primary="true" class="px-5 py-3 full-mb" aria-label=aria-label }} --}}
+  {{else}}
+    <a href="#" class="btn btn-outline-primary full-mb">
+      {{btn-label}}
+      <svg class="icon icon-primary icon-xs ml-10">
+        <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-arrow-right"></use>
+      </svg>
+    </a>
+  {{!-- {{>cmp-button/cmp-button primary="true" class="px-5 py-3 full-mb" aria-label=aria-label }} --}}
+  {{/if}}
+</div>
+{{/if}}
+
+</div>
+

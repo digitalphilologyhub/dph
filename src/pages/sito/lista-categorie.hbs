@@ -1,0 +1,145 @@
+{{#>cmp-base/base title="Novità - Nome del Comune" headerActive2=true}}
+  <main>
+    <div class="container" id="main-container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-lg-10">
+          {{>cmp-breadcrumbs/cmp-breadcrumbs active="Novità"}}
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row justify-content-center row-shadow">
+        <div class="col-12 col-lg-10">
+          {{>cmp-hero/cmp-hero
+        hero-title="Titolo della pagina lista con risorse in evidenza e categorie"
+        hero-text="Breve sommario dei contenuti presenti in questa pagina, generalmene intesa con la descrizione della tipologia di
+        contenuti"
+        wrapper-class="pt-0 ps-0 pb-4 pb-lg-60"}}
+        </div>
+      </div>
+    </div>
+
+    <div class="container py-5">
+      <h2 class="title-xxlarge mb-4">In evidenza</h2>
+      {{>cmp-list-card-img/cmp-list-card-img-hr cards=cards.card-news}}
+    </div>
+
+    <div class="container py-5" id="argomento">
+      <h2 class="title-xxlarge mb-4">Esplora per categoria</h2>
+      <div class="row g-4">
+
+        <div class="col-md-6 col-xl-4">
+          {{>cmp-card/cmp-card-simple
+        borderlight=true
+        classTitle="title-xlarge"
+        classText="description"
+        card-title="{Nome categoria}"
+        card-text="Descrizione della categoria"
+        }}
+        </div>
+
+        <div class="col-md-6 col-xl-4">
+          {{>cmp-card/cmp-card-simple
+          borderlight=true
+          classTitle="title-xlarge"
+          classText="description"
+          card-title="{Nome categoria}"
+          card-text="Descrizione della categoria"
+          }}
+        </div>
+
+        <div class="col-md-6 col-xl-4">
+          {{>cmp-card/cmp-card-simple
+          borderlight=true
+          classTitle="title-xlarge"
+          classText="description"
+          card-title="{Nome categoria}"
+          card-text="Descrizione della categoria"
+          }}
+        </div>
+
+        <div class="col-md-6 col-xl-4">
+          {{>cmp-card/cmp-card-simple
+          borderlight=true
+          classTitle="title-xlarge"
+          classText="description"
+          card-title="{Nome categoria}"
+          card-text="Descrizione della categoria"
+          }}
+        </div>
+
+        <div class="col-md-6 col-xl-4">
+          {{>cmp-card/cmp-card-simple
+          borderlight=true
+          classTitle="title-xlarge"
+          classText="description"
+          card-title="{Nome categoria}"
+          card-text="Descrizione della categoria"
+          }}
+        </div>
+
+        <div class="col-md-6 col-xl-4">
+          {{>cmp-card/cmp-card-simple
+          borderlight=true
+          classTitle="title-xlarge"
+          classText="description"
+          card-title="{Nome categoria}"
+          card-text="Descrizione della categoria"
+          }}
+        </div>
+
+        <div class="col-md-6 col-xl-4">
+          {{>cmp-card/cmp-card-simple
+          borderlight=true
+          classTitle="title-xlarge"
+          classText="description"
+          card-title="{Nome categoria}"
+          card-text="Descrizione della categoria"
+          }}
+        </div>
+
+        <div class="col-md-6 col-xl-4">
+          {{>cmp-card/cmp-card-simple
+          borderlight=true
+          classTitle="title-xlarge"
+          classText="description"
+          card-title="{Nome categoria}"
+          card-text="Descrizione della categoria"
+          }}
+        </div>
+
+        <div class="col-md-6 col-xl-4">
+          {{>cmp-card/cmp-card-simple
+          borderlight=true
+          classTitle="title-xlarge"
+          classText="description"
+          card-title="{Nome categoria}"
+          card-text="Descrizione della categoria"
+          }}
+        </div>
+        
+      </div>
+    </div>
+
+    <div class="bg-primary">
+      <div class="container">
+        <div class="row d-flex justify-content-center bg-primary">
+          <div class="col-12 col-lg-6">
+            {{>cmp-rating/cmp-rating id-title="rating" public-template=true}}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-grey-card shadow-contacts">
+      <div class="container">
+        <div class="row d-flex justify-content-center p-contacts">
+          <div class="col-12 col-lg-6">
+            {{>cmp-contacts/cmp-contacts city-problems=true}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  {{/cmp-base/base }}
