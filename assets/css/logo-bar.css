@@ -1,0 +1,77 @@
+/* Stile di default per i loghi */
+  .logo-bar {
+    display: flex;
+    justify-content: left; /* Per allineare i loghi al centro orizzontalmente */
+  }
+  .logo-container img {
+    max-width: 100%;
+    max-height: 45px;
+  }
+  .it-header-slim-wrapper .it-header-slim-wrapper-content .logo-bar {
+    align-items: center;
+  }
+  .logo-container {
+    margin: 0 3rem 0 0; /* Spazio tra i loghi */
+  }
+  
+  /* Regole per ridimensionare i loghi su schermi di dimensioni diverse */
+  @media only screen and (min-width: 768px) {
+    .logo-container img {
+      max-width: 80px; /* Ridimensiona il logo a 80px su schermi con larghezza minima di 768px */
+      max-height: 30px;
+    }
+    .logo-container {
+        margin: 0 6rem 0 0; /* Spazio tra i loghi */
+    }
+  }
+  @media only screen and (min-width: 992px) {
+    .logo-container img {
+      max-width: 100px; /* Ridimensiona il logo a 100px su schermi con larghezza minima di 992px */
+      max-height: 35px;
+    }
+    .it-header-slim-wrapper .it-header-slim-wrapper-content .logo-bar {
+        align-items: center;
+    }
+    .logo-container {
+        margin: 0 6rem 0 0; /* Spazio tra i loghi */
+    }
+  }
+  
+  @media only screen and (min-width: 1200px) {
+    .logo-container img {
+      max-width: 120px; /* Ridimensiona il logo a 120px su schermi con larghezza minima di 1200px */
+      max-height: 45px;
+    }
+    .logo-container {
+        margin: 0 6rem 0 0; /* Spazio tra i loghi */
+    }
+  }
+
+/* Regole CSS per schermi cellulari */
+@media only screen and (max-width: 600px) {
+    .logo-container img {
+       max-width: 100%;
+       max-height: 40px;
+    }
+    .logo-container {
+        margin: 0 1rem 0 0; /* Spazio tra i loghi */
+    }
+}
+
+.cloned-element {
+  display: none;
+}
+
+.it-header-slim-wrapper .it-header-slim-wrapper-content a.it-opener {
+  padding: 0 !important;
+}
+
+section#head-section {
+  /*background: url("../images/header1.svg") no-repeat;*/
+  background-color: #1266cd;
+  background-size: cover;
+}
+section .container .row  div#head-desc .card.mb-5, div#head-desc a {
+  background-color: #1266cd;
+  color: white;
+}
